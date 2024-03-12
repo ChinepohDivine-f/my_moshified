@@ -5,6 +5,7 @@
   --color-heading: #1b0760;
   --color-body: #918ca4;
   --color-white: #fff;
+  --color-tertiary: #f3f9fa;
 }
 
 /* my color palete */
@@ -185,7 +186,7 @@ a {
 }
 
 .icon-container {
-  background: gold;
+  background: var(--color-tertiary);
   border-radius: 100%;
   height: 64px;
   width: 64px;
