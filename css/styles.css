@@ -4,6 +4,7 @@
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+  --color-white: #fff;
 }
 
 /* my color palete */
@@ -32,7 +33,7 @@ html {
 
 body {
   color: var(--color-body);
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -62,9 +63,7 @@ p {
   margin-top: 0;
 }
 
-@media screen and (min-width: 1024) {
-    
-
+@media screen and (min-width: 1024px) {
   h1 {
     font-size: 8rem;
   }
@@ -85,7 +84,7 @@ p {
 /* links */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .link-arrow {
@@ -96,18 +95,81 @@ a {
 }
 
 .link-arrow::after {
-    content: '-->';
-    margin-left: 5px;
-    transition: margin-left 0.16;
+  content: "-->";
+  margin-left: 5px;
+  transition: margin-left 0.16s;
 }
 
-.link-arow:hover::after { 
-    margin-left: 10px;
+.link-arow:hover::after {
+  margin-left: 10px;
 }
- 
 
-@media screen and (min-width: 1024) {
-    .link-arrow {
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
+
+/* badges */
+
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  font-weight: 2rem;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .badge {
         font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 2rem;
+    }
+}
+
+/* Lists */
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-heading);
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--tick {
+    list-style-image: url(../image/tick.svg);
+    padding-left: 3rem;
+}
+
+.list-tick .list__item {
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item {
+        padding-left: 0;
     }
 }
