@@ -261,10 +261,31 @@ a {
   background: var(--color-white);
   color: var(--color-heading);
   border: 2px solid var(--color-heading);
-   transition: background 0.1s;
+  transition: background 0.1s;
 }
 
 .btn--outlined:hover {
   background: var(--color-heading);
   color: var(--color-white);
+}
+
+/* inputs */
+
+.input {
+  padding: 1.5rem 3.5;
+  border: 1px solid #ccc;
+  color: var(--color-heading);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
 }
