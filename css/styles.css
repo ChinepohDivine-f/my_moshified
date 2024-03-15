@@ -54,6 +54,11 @@ body {
 
 /* typography */
 
+::selection {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
 h1,
 h2,
 h3 {
@@ -73,6 +78,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 p {
@@ -166,7 +172,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-heading);
 }
 
 .list--inline .list__item {
@@ -177,6 +182,7 @@ a {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
+  color: var(--color-heading);
 }
 
 .list-tick .list__item {
@@ -246,7 +252,7 @@ a {
 }
 
 .btn .icon {
-  width: 2rem; 
+  width: 2rem;
   height: 2rem;
   margin-right: 1rem;
   vertical-align: middle;
@@ -388,7 +394,7 @@ a {
 /* plans  */
 
 .plan {
-  transition: transform .2 ease-in-out;
+  transition: transform 0.2 ease-in-out;
 }
 
 .plan__name {
@@ -441,7 +447,6 @@ a {
   transform: scale(1.05);
 }
 
-
 .plan--popular:hover {
   transform: scale(1.15);
 }
@@ -465,6 +470,7 @@ a {
 
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media__title {
@@ -669,18 +675,20 @@ a {
   color: #7b858b;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: var(--color-white);
 }
 
 .block--skewed-right {
   padding: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
 .block--skewed-left {
   padding: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .container {
@@ -754,9 +762,9 @@ a {
 
 /* Hero page  */
 
-.hero {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-}
+/* .hero {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);  unnecessary 
+} */
 
 .hero__tagline {
   font-size: 2rem;
@@ -787,12 +795,11 @@ a {
   box-shadow: 0 0 30px 20px #e6ebee;
   margin: 4rem auto;
   max-width: 670px;
-
 }
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -805,19 +812,17 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
-  
-  .block-domain__prices .badge {    
+
+  .block-domain__prices .badge {
     font-size: 2rem;
   }
 }
-
 
 /* block plans  */
 
 .block-plans .grid {
   gap: 8rem 4rem;
 }
-
 
 .block-plans .card {
   max-width: 500px;
@@ -846,6 +851,26 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+}
+
+/* showcase block */
+
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+  .block-showcase__image {
+    justify-self: end;
+  }
+
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
 
