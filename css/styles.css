@@ -341,7 +341,8 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 3.5rem;
+  padding: 1.5rem 4vw;
+  width: 0;
 }
 
 .input-group .btn {
@@ -370,7 +371,8 @@ a {
 
 .card__header,
 .card__body {
-  padding: 2rem 3rem;
+  padding: 2rem 2.5rem;
+  padding-top: 4rem;
 }
 
 .card--primary .card__header {
@@ -439,8 +441,8 @@ a {
   width: 40px;
   display: inline-block;
   position: absolute;
-  top: -6px;
-  right: 3.5%;
+  top: -7px;
+  right: 3%;
 }
 
 .plan:hover {
@@ -587,7 +589,7 @@ a {
 /* callout  */
 
 .callout {
-  padding: 4rem;
+  padding: 3rem 4rem;
   border-radius: 5px;
 }
 
@@ -609,7 +611,32 @@ a {
 
 .callout__content {
   text-align: center;
+  font-size: 2rem;
 }
+
+.floating__container {
+  align-self: center;
+  position: relative;
+  justify-content: center;
+  max-width: 1140px;
+  transform: translateY(45%);
+  margin: auto;
+  display: flex;
+  transition: transform 0.15s ease-out;
+}
+
+@media screen and (max-width: 1039px) {
+  .floating__container {
+    transform: translateY(10%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .floating__container {
+    transform: translateY(5%);
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   .callout .grid--1x2 {
@@ -663,7 +690,7 @@ a {
 /* block  */
 
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 4rem;
   padding: var(--padding-vertical) 2rem;
   /* border: 2px solid red; */
 }
@@ -685,13 +712,25 @@ a {
 }
 
 .block--skewed-right {
-  padding: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  padding: calc(var(--padding-vertical) + 4rem) 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 
 .block--skewed-left {
-  padding: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  padding: calc(var(--padding-vertical) + 4rem) 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .block--skewed-right {
+    padding: calc(var(--padding-vertical) + 6rem);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  }
+
+  .block--skewed-left {
+    padding: calc(var(--padding-vertical) + 6rem);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
 }
 
 .container {
@@ -801,8 +840,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-heading);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -828,8 +868,9 @@ a {
 }
 
 .block-plans .card {
-  max-width: 500px;
+  max-width: 525px;
   margin: 0 auto;
+  /* padding: 1rem; */
 }
 
 /* Features  */
@@ -855,6 +896,10 @@ a {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
+  /* 
+  .block .container {
+    padding: 0 2rem;
+  } */
 }
 
 /* showcase block */
@@ -927,8 +972,13 @@ a {
   color: var(--color-white);
 }
 
+.footer__sections {
+  padding: 4rem 0rem;
+}
+
 @media screen and (min-width: 768px) {
   .footer__sections {
+    padding-top: 6rem;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 
