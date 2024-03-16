@@ -13,6 +13,7 @@
 
 /* my color palete */
 
+
 /* :root {
     --color-primary: #1302ac;
     --color-secondary: #2b65bd; 
@@ -20,6 +21,7 @@
     --color-heading: rgb(1, 1, 107);
     --color-body: #333;
 } */
+
 
 /* :root {
   --color-primary: #553555;
@@ -139,7 +141,7 @@ a {
   padding: 0.5rem 2rem;
   font-weight: 600;
   white-space: nowrap;
-  font-weight: 2rem;
+  font-size: 2rem;
 }
 
 .badge--primary {
@@ -349,7 +351,7 @@ a {
   margin: 4px;
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
   .input {
     font-size: 1rem;
   }
@@ -396,7 +398,7 @@ a {
 /* plans  */
 
 .plan {
-  transition: transform 0.2 ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .plan__name {
