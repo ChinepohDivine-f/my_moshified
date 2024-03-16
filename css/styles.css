@@ -428,10 +428,6 @@ a {
   margin-bottom: 2rem;
 }
 
-.plan--popular {
-  transform: scale(1.1);
-}
-
 .plan--popular .card__header {
   position: relative;
 }
@@ -465,6 +461,10 @@ a {
   }
   .plan__description {
     font-size: 1.7rem;
+  }
+
+  .plan--popular {
+    transform: scale(1.1);
   }
 }
 
@@ -557,8 +557,17 @@ a {
 
 /* Testimonials  */
 
+.testimonials {
+  margin: 4vw;
+}
+
+.testimonial__header {
+  text-align: center;
+  padding: 2rem;
+}
+
 .testimonial {
-  padding: 3rem;
+  padding: 3rem 6rem;
 }
 
 .testimonial__image {
@@ -574,11 +583,15 @@ a {
   top: 6rem;
   right: -3.2rem;
 }
+ .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
 
 @media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 
   .testimonial .quote {
@@ -636,7 +649,6 @@ a {
     transform: translateY(5%);
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .callout .grid--1x2 {
