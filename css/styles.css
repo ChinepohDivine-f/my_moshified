@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -13,7 +15,6 @@
 
 /* my color palete */
 
-
 /* :root {
     --color-primary: #1302ac;
     --color-secondary: #2b65bd; 
@@ -22,13 +23,15 @@
     --color-body: #333;
 } */
 
-
-/* :root {
-  --color-primary: #553555;
-  --color-secondary: #755b69;
-  --color-accent: #adf1d2;
+/* 
+:root {
+  --color-primary: #6750a4;
+  --color-secondary: #625b71;
+  --color-accent: #7e5260;
   --color-heading: #0b032d;
-  --color-body: #070707;
+  --color-tertiary: #f3f9fa; 
+  --color-body: #1c1b1e;
+  --color-heading: #22005d;
 } */
 
 /* style for all elements */
@@ -585,10 +588,10 @@ a {
   top: 6rem;
   right: -3.2rem;
 }
- .testimonial .quote,
-  .testimonial .quote__author {
-    font-size: 2.4rem;
-  }
+.testimonial .quote,
+.testimonial .quote__author {
+  font-size: 2.4rem;
+}
 
 @media screen and (min-width: 768px) {
   .testimonial .quote,
@@ -904,16 +907,13 @@ a {
 
 .feature:first-of-type {
   margin-top: 6rem;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
-  /* 
-  .block .container {
-    padding: 0 2rem;
-  } */
 }
 
 /* showcase block */
