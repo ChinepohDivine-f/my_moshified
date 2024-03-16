@@ -1,0 +1,23 @@
+{
+  "name": "my_moshified",
+  "version": "1.0.0",
+  "description": "Coding with mosh.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChinepohDivine-f/my_moshified.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChinepohDivine-f/my_moshified/issues"
+  },
+  "homepage": "https://github.com/ChinepohDivine-f/my_moshified#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
