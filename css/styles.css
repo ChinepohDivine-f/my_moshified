@@ -686,7 +686,7 @@ a {
 
 .collapsible__chevron {
   /* transform: rotate(-90deg); */
-  transform: rotate(0);
+  transform: rotate(180);
   transition: transform 0.15s;
 }
 
@@ -699,7 +699,7 @@ a {
 
 .collapsible--expanded .collapsible__chevron {
   /* transform: rotate(0); */
-  transform: rotate(180deg);
+  transform: rotate(-90deg);
 }
 
 .collapsible--expanded .collapsible__content {
