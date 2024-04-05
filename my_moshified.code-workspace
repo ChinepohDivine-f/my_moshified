@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "my_moshified",
+		"path": "."
+	},
+	{
+		"name": "js",
+		"path": "../../../../../../media/hacker/3634B0E234B0A671/Users/Cr4k3rHq/Documents/1HTML & CSS/Series 3/Content/6Moshify/code/Moshify/js"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "my_moshified"
+  }
+}

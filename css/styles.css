@@ -23,16 +23,6 @@
     --color-body: #333;
 } */
 
-/* 
-:root {
-  --color-primary: #6750a4;
-  --color-secondary: #625b71;
-  --color-accent: #7e5260;
-  --color-heading: #0b032d;
-  --color-tertiary: #f3f9fa; 
-  --color-body: #1c1b1e;
-  --color-heading: #22005d;
-} */
 
 /* style for all elements */
 
@@ -46,7 +36,7 @@
 
 html {
   font-size: 62.5%;
-  line-height: 1.5;
+  line-height: 1.5; 
 }
 
 /* style for body elements  */
@@ -573,7 +563,7 @@ a {
 /* Testimonials  */
 
 .testimonials {
-  margin: 4vw;
+  padding: 4vw;
 }
 
 .testimonial__header {
@@ -719,6 +709,7 @@ a {
 .block {
   --padding-vertical: 4rem;
   padding: var(--padding-vertical) 2rem;
+  margin: 0;
   /* border: 2px solid red; */
 }
 
@@ -925,6 +916,7 @@ a {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
+  
 }
 
 /* showcase block */
