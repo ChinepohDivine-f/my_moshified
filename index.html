@@ -189,7 +189,7 @@
       </section>
       <!-- feature section  -->
       <!-- first section  -->
-      <section class="block container">
+      <section class="block bloc-plans container">
         <header class="block__header" data-aos="fade-right">
           <h2>Host on the Cloud to Keep Growing</h2>
           <p>
@@ -198,7 +198,18 @@
             to new heights beyond limits.
           </p>
         </header>
-        <article class="grid grid--1x2 feature">
+        <article class="feature grid grid--1x2">
+          <picture data-aos="fade-up">
+            <source
+              type="image/webp"
+              srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
+            />
+            <img class="feature__image" src="images/easy@2x.jpg" alt="" />
+          </picture>
           <div class="feature__content" data-aos="fade-right">
             <span class="icon-container">
               <svg class="icon icons--primary">
@@ -214,25 +225,12 @@
 
             <a href="#" class="link-arrow">Learn More</a>
           </div>
-
-          <picture data-aos="fade-up">
-            <source
-              type="image/webp"
-              srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
-            />
-            <source
-              type="image/jpg"
-              srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
-            />
-            <img class="feature__image" src="images/easy@2x.jpg" alt="" />
-          </picture>
         </article>
-      </section>
 
-      <!-- second section  -->
-      <section class="block container">
-        <div class="grid grid--1x2 feature">
-          <div class="feature__content" data-aos="fade-left">
+        <!-- second section  -->
+
+        <div class="feature grid grid--1x2">
+          <div class="feature__content" data-aos="fade-right">
             <span class="icon-container">
               <svg class="icon icons--primary">
                 <use href="images/sprite.svg#fast"></use>
@@ -260,10 +258,10 @@
             <img class="feature__image" src="images/fast@2x.jpg" alt="" />
           </picture>
         </div>
-      </section>
-      <!-- third section  -->
-      <section class="block container">
-        <div class="grid grid--1x2 feature">
+
+        <!-- third section  -->
+
+        <div class="feature grid grid--1x2">
           <div class="feature__content" data-aos="fade-right">
             <span class="icon-container">
               <svg class="icon icons--primary">
@@ -292,10 +290,10 @@
             <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
           </picture>
         </div>
-      </section>
-      <!-- fourth section  -->
-      <section class="block container">
-        <div class="grid grid--1x2 feature">
+
+        <!-- fourth section  -->
+
+        <div class="feature grid grid--1x2">
           <div class="feature__content" data-aos="fade-right">
             <span class="icon-container">
               <svg class="icon icons--primary">
@@ -325,6 +323,7 @@
           </picture>
         </div>
       </section>
+
       <!-- block-showcase section  -->
 
       <section class="block block--dark block--skewed-right block-showcase">
@@ -371,7 +370,7 @@
                   <h3 class="media__title">Easy Start & Managed Updates</h3>
                   <p>
                     Start your journey smoothly with our easy setup process and
-                    enjoy hassle-free managed updates. 
+                    enjoy hassle-free managed updates.
                   </p>
                 </div>
               </div>

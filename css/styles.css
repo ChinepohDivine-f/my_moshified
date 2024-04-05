@@ -923,13 +923,12 @@ a {
   margin-bottom: 0;
 }
 
+
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
-  
 }
-
 /* showcase block */
 
 .block-showcase__image > img {
