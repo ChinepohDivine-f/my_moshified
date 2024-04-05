@@ -124,12 +124,15 @@ a {
 .link-arrow::after {
   content: "-->";
   margin-left: 5px;
-  transition: margin 0.16s;
+  transition: all 0.16s;
 }
 
-.link-arow:hover::after {
+.link-arrow:hover::after {
+  /* content: "   -->"; */
   margin-left: 10px;
+  /* transition: margin 0.16s; */
 }
+
 
 @media screen and (min-width: 1024px) {
   .link-arrow {
